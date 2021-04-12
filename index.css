@@ -27,9 +27,9 @@ a:hover {
     background-size: cover;
 }
 header {
-    background: url(header.jpg);
+    /* background: url(header.jpg) no-repeat center center fixed; */
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -53,16 +53,13 @@ header {
     flex-direction: column;
 }
 section {
-    width: 75vw;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 80vw;
+    padding: 15px 15px;
     background-color: rgb(0, 0, 0, 0.2);
     margin: 30px auto;
 }
 .about {
-    margin-top: 150px;
+    margin-top: 170px;
 }
 
 @media (min-width: 768px) {
@@ -70,6 +67,7 @@ section {
         width: 75vw;
     }
     .navbar {
+        width: 80vw;
     }
 }
 

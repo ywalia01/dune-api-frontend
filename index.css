@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #ffffff;
+    background: #000000;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+a:hover {
+    color: #e0a143;
+}
+.wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    background: url(dune_vb.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header {
+    background: url(header.jpg);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.navbar {
+    width: 70vw;
+    margin: 20px auto;
+}
+.nav-menu {
+    padding: 0vw 0vw;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nobull {
+    list-style-type: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+section {
+    width: 75vw;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(0, 0, 0, 0.2);
+    margin: 30px auto;
+}
+.about {
+    margin-top: 150px;
+}
+
+@media (min-width: 768px) {
+    section {
+        width: 75vw;
+    }
+    .navbar {
+    }
+}
+
+@media (min-width: 1048px) {
+    section {
+        width: 55vw;
+    }
+    .navbar {
+        width: 600px;
+    }
+}

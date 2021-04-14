@@ -57,6 +57,7 @@ section {
     padding: 15px 15px;
     background-color: rgb(0, 0, 0, 0.2);
     margin: 30px auto;
+    border-radius: 18px;
 }
 .about {
     margin-top: 170px;

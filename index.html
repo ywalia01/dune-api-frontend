@@ -11,19 +11,17 @@
 <body>
     <div class="wrapper">
         <header>
+            <img class="nav-logo" src="./DUNE.svg">
             <nav class="navbar">
-                <!-- <div class="nav-logo">
-                    <a href="#"></a>
-                </div> -->
-                <ul class="nav-menu">
-                    <li class="nobull"><a href="" class="nav-link"><img src="./DUNE.svg" style="height: 50px;"></li>
+                <ul id ="nav-menu">
+                    <!-- <li class="nobull"><a href="" class="nav-link"><img src="./DUNE.svg" style="height: 50px;"></li> -->
                     <li class="nobull"><a href="" class="nav-link">About</a></li>
                     <li class="nobull"><a href="./docu.html" class="nav-link">Documentation</a></li>
                     <li class="nobull"><a href="" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
+            <img class="menu-icon" src="./menu.png" onclick="toggleMenu()">
         </header>
-
         <div class="container">
             <section class="about">
                 <h1>Dune API</h1>
@@ -117,5 +115,20 @@
             </section>
         </div>
     </div>
+
+    <script>
+        var menuList = document.getElementById("nav-menu");
+        menuList.style.maxHeight = "0px";
+        function toggleMenu () {
+            if (menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 </html>

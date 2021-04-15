@@ -14,10 +14,9 @@
             <img class="nav-logo" src="./DUNE.svg">
             <nav class="navbar">
                 <ul id ="nav-menu">
-                    <!-- <li class="nobull"><a href="" class="nav-link"><img src="./DUNE.svg" style="height: 50px;"></li> -->
-                    <li class="nobull"><a href="" class="nav-link">About</a></li>
-                    <li class="nobull"><a href="./docu.html" class="nav-link">Documentation</a></li>
-                    <li class="nobull"><a href="" class="nav-link">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./docu.html">Documentation</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <img class="menu-icon" src="./menu.png" onclick="toggleMenu()">
@@ -118,15 +117,21 @@
 
     <script>
         var menuList = document.getElementById("nav-menu");
+        var menuImage = document.querySelector(".menu-icon");
+        
         menuList.style.maxHeight = "0px";
+        menuImage.src = "./menu.png";
+
         function toggleMenu () {
             if (menuList.style.maxHeight == "0px")
             {
                 menuList.style.maxHeight = "130px";
+                menuImage.src = "./menu2.png";
             }
             else
             {
                 menuList.style.maxHeight = "0px";
+                menuImage.src = "./menu.png";
             }
         }
     </script>

@@ -47,11 +47,6 @@ nav ul li {
     margin-right: 30px;
 }
 #hidden {
-    width: 100%;
-    position: absolute;
-    top: 75px;
-    right: 0;
-    z-index: 2;
     display: inherit;
 }
 nav ul li a {
@@ -75,6 +70,11 @@ section {
 
 @media only screen and (max-width: 768px) {
     nav ul {
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
         display: none;
     }
     #hidden {

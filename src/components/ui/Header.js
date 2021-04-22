@@ -13,6 +13,9 @@ const Header = () => {
             <nav className="navbar">
                 <ul className="nav-menu" id={showLinks ? "hidden" : ""}>
                     <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
                         <Link to="/docu">Documentation</Link>
                     </li>
                     <li>

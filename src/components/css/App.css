@@ -1,5 +1,3 @@
-:root {
-}
 * {
     margin: 0;
     padding: 0;
@@ -48,6 +46,14 @@ nav ul li {
     display: inline-block;
     margin-right: 30px;
 }
+#hidden {
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+    display: inherit;
+}
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -69,11 +75,12 @@ section {
 
 @media only screen and (max-width: 768px) {
     nav ul {
-        width: 100%;
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
+        display: none;
+    }
+    #hidden {
+        max-height: 190px;
+        overflow: hidden;
+        transition: 0.4s;
     }
     nav ul li {
         display: block;
@@ -82,10 +89,6 @@ section {
     }
     .menu-icon {
         display: block;
-    }
-    #nav-menu {
-        overflow: hidden;
-        transition: 0.4s;
     }
     section {
         width: 80vw;

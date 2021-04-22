@@ -3,7 +3,7 @@ import React from 'react'
 function Support() {
     return (
         <section className="support">
-            <h1>Docu</h1>
+            <h1>Support</h1>
             <br />
             <br />
             <p>

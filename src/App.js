@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './components/css/App.css';
 import Header from './components/ui/Header';
+import Footer from './components/ui/Footer';
 import Home from './Routes/Home';
 import Docs from './Routes/Docs';
 import Login from './Routes/Login';
@@ -31,6 +32,7 @@ function App() {
           </Route>
 
         </Switch>
+        <Footer/>
       </div>
     </Router>
   );
